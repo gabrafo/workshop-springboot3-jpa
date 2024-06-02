@@ -1,14 +1,20 @@
 package com.educandoweb.course.entities;
 
+import jakarta.persistence.*;
+
 import java.io.Serial;
 import java.io.Serializable;
 import java.util.Objects;
 
+@Entity
+@Table(name = "tb_user") // User é uma palavra reservada, então tem que colocar outro nome!
 public class User implements Serializable {
 
     @Serial // Faz com que o objeto possa ser transformado em cadeias de bytes e ser trafegado na rede
     private static final long serialVersionUID = 1L;
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY) // Estratégia de auto incremento do ID
     private Long id;
     private String name;
     private String email;

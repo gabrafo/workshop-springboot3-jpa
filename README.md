@@ -14,7 +14,7 @@ A API está disponível publicamente e pode ser acessada através do seguinte UR
 - **Spring Boot**
 - **Maven**
 - **Docker**
-- **H2 (banco de dados em memória para testes**
+- **H2 (banco de dados em memória para testes)**
 - **Render (para deploy na nuvem)**
 - **PostgreSQL (banco de dados na nuvem)**
 
